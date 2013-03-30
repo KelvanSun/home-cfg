@@ -6,12 +6,11 @@ syntax on  "自动语法高亮
 filetype on "检测文件类型插件
 
 if !exists('g:VimrcIsLoad')
-	set guioptions-=m " 隐藏菜单栏
+	"set guioptions-=m " 隐藏菜单栏
 	set guioptions-=T " 隐藏工具栏
 	set guioptions-=L " 隐藏左侧滚动条
 	set guioptions-=r " 隐藏右侧滚动条
 	set guioptions-=b " 隐藏底部滚动条
 	set showtabline=0 " Tab栏
-	set guifont="Arial_monospaced_for_SAP:h9:cANSI"
-	set gfw="幼圆:h10:cGB2312"
+	set guifont="Monospace 10"
 endif
