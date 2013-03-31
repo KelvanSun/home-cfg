@@ -65,7 +65,7 @@
 (setq browse-url-browser-function 'browse-url-generic)
 
  ;; 中文字体的设定，网上很多资料都是gb18030，但我的locale是UTF-8
-(set-default-font "Sans-10")
-;;(set-default-font "DejaVu Sans Mono-9")
+;;(set-default-font "Sans-10")
+(set-default-font "DejaVu Sans-10")
 ;;(set-fontset-font (frame-parameter nil 'font) 
 ;;  'unicode '("文泉驿微米黑" . "unicode-bmp"))
