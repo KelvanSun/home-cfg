@@ -17,3 +17,7 @@ if !exists('g:VimrcIsLoad')
 endif
 
 set fileencodings=utf-8
+set nowrap "不自动换行
+set incsearch "在输入要搜索的文字时，实时匹配
+set autoindent
+set nohlsearch
