@@ -11,14 +11,21 @@
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "DejaVu Sans Mono" :foundry "unknown" :slant normal :weight normal :height 98 :width normal)))))
 
+;; 设置package包管理器
+(require 'package)
+  (package-initialize)
+  (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/") t)
+
 ;; 主题设置 
-(require 'color-theme)
-(color-theme-initialize)
-(color-theme-deep-blue)
+;;(require 'color-theme)			
+;;(color-theme-arjen)
+(load-theme 'wheatgrass t)
 ;; 去掉启动欢迎界面
 (setq inhibit-startup-message t)
 ;; 不显示工具条
-(tool-bar-mode -1)
+(tool-bar-mode 0)
+;; 不显示滚动条
+(scroll-bar-mode 0)
 ;; 括号匹配时显示另外一边的括号，而不是烦人的跳到另一个括号
 (show-paren-mode t)
 (setq show-paren-style 'parentheses)
@@ -26,3 +33,8 @@
 (setq-default make-backup-files nil)
 ;;光标靠近鼠标的时候，让鼠标自动让开，别挡住视线
 (mouse-avoidance-mode 'animate)
+(defalias 'yes-or-no-p 'y-or-n-p)
+;; 开启行号
+(global-linum-mode 1)
+
+
