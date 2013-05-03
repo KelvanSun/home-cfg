@@ -38,4 +38,7 @@
 ;; 开启行号
 (global-linum-mode 1)
 
-
+(setq inferior-lisp-program "/usr/bin/sbcl")
+(add-to-list 'load-path "/usr/share/emacs/site-lisp/slime/")
+(require 'slime)
+(slime-setup)
