@@ -42,3 +42,8 @@
 (add-to-list 'load-path "/usr/share/emacs/site-lisp/slime/")
 (require 'slime)
 (slime-setup)
+
+;; 开发环境设置
+(add-hook 'c++-mode-hook
+	  '(lambda()
+	     (c-set-style "k&r")))
