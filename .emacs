@@ -3,6 +3,7 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(ede-project-directories (quote ("/home/kelvan" "/home/kelvan/dev/weva")))
  '(show-paren-mode t)
  '(tool-bar-mode nil))
 (custom-set-faces
@@ -37,11 +38,21 @@
 (defalias 'yes-or-no-p 'y-or-n-p)
 ;; 开启行号
 (global-linum-mode 1)
+;; 个人信息设置
+(setq user-full-name "Kelvan Sun")
+(setq user-mail-address "kelvan.sun@gmail.com")
+
+;; 设置预览所用的WWW浏览器
+(setq browse-url-generic-program "firefox")
 
 (setq inferior-lisp-program "/usr/bin/sbcl")
 (add-to-list 'load-path "/usr/share/emacs/site-lisp/slime/")
 (require 'slime)
 (slime-setup)
+
+;; 配置git-emacs
+(add-to-list 'load-path "~/.emacs.d/git-emacs/")
+(require 'git-emacs)
 
 ;; 开发环境设置
 (add-hook 'c++-mode-hook
