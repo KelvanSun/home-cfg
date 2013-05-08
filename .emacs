@@ -18,6 +18,7 @@
   (package-initialize)
   (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/") t)
 
+
 ;; 主题设置 
 ;;(require 'color-theme)			
 ;;(color-theme-arjen)
