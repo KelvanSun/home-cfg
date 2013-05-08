@@ -56,7 +56,7 @@
 (require 'git-emacs)
 
 (global-set-key (kbd "C-c C-c C-a") 'git-commit-all)
-
+(global-set-key (kbd "C-c C-c C-s") 'git-status)
 ;; 开发环境设置
 (add-hook 'c++-mode-hook
 	  '(lambda()
