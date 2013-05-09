@@ -55,8 +55,8 @@
 (add-to-list 'load-path "~/.emacs.d/git-emacs/")
 (require 'git-emacs)
 
-(global-set-key (kbd "C-c C-c C-a") 'git-commit-all)
-(global-set-key (kbd "C-c C-c C-s") 'git-status)
+(global-set-key [C-f5] 'git-commit-all)
+(global-set-key [C-f6] 'git-status)
 ;; 开发环境设置
 (add-hook 'c++-mode-hook
 	  '(lambda()
