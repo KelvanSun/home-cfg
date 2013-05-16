@@ -61,3 +61,7 @@
 (add-hook 'c++-mode-hook
 	  '(lambda()
 	     (c-set-style "k&r")))
+
+;;(require 'cedet)
+;;(global-ede-mode 1)
+;;(semantic-load-enable-code-helpers)
