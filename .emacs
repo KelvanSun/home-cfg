@@ -1,28 +1,20 @@
 (custom-set-variables
- ;; custom-set-variables was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(ede-project-directories (quote ("/home/kelvan" "/home/kelvan/dev/weva")))
- '(show-paren-mode t)
- '(tool-bar-mode nil))
+  ;; custom-set-variables was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
 (custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- '(default ((t (:family "Ubuntu Mono" :foundry "unknown" :slant normal :weight normal :height 113 :width normal)))))
-
-;; 设置package包管理器
-(require 'package)
-  (package-initialize)
-  (add-to-list 'package-archives '("marmalade" . "http://marmalade-repo.org/packages/") t)
-
+  ;; custom-set-faces was added by Custom.
+  ;; If you edit it by hand, you could mess it up, so be careful.
+  ;; Your init file should contain only one such instance.
+  ;; If there is more than one, they won't work right.
+ '(default ((t (:family "Ubuntu Mono" :foundry "unknown" :slant normal :weight normal :height 113 :width normal))))))
 
 ;; 主题设置 
-;;(require 'color-theme)			
-;;(color-theme-arjen)
-(load-theme 'wheatgrass t)
+(require 'color-theme)			
+(color-theme-initialize)
+(color-theme-bharadwaj-slate)
+;;(load-theme 'wheatgrass t)
 ;; 去掉启动欢迎界面
 (setq inhibit-startup-message t)
 ;; 不显示工具条
@@ -52,11 +44,11 @@
 (slime-setup)
 
 ;; 配置git-emacs
-(add-to-list 'load-path "~/.emacs.d/git-emacs/")
-(require 'git-emacs)
+;;(add-to-list 'load-path "~/.emacs.d/git-emacs/")
+;;(require 'git-emacs)
 
-(global-set-key [C-f5] 'git-commit-all)
-(global-set-key [C-f6] 'git-status)
+;;(global-set-key [C-f5] 'git-commit-all)
+;;(global-set-key [C-f6] 'git-status)
 ;; 开发环境设置
 (add-hook 'c++-mode-hook
 	  '(lambda()
