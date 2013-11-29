@@ -19,7 +19,10 @@
 ;; 主题设置 
 (require 'color-theme)			
 (color-theme-initialize)
-(color-theme-bharadwaj-slate)
+(if(window-system)
+	(color-theme-bharadwaj-slate)
+	(color-theme-arjen)
+)
 ;;(load-theme 'wheatgrass t)
 ;; 去掉启动欢迎界面
 (setq inhibit-startup-message t)
