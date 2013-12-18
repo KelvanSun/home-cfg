@@ -62,3 +62,8 @@
 (add-hook 'c++-mode-hook
 	  '(lambda()
 	     (c-set-style "k&r")))
+
+(add-hook 'gdb-mode-hook '(lambda()
+			    (global-set-key[(f5)] 'gud-go)
+			    (global-set-key[(f7)] 'gud-step)
+			    (global-set-key[(f8)] 'gud-next)))
