@@ -66,4 +66,5 @@
 (add-hook 'gdb-mode-hook '(lambda()
 			    (global-set-key[(f5)] 'gud-go)
 			    (global-set-key[(f7)] 'gud-step)
-			    (global-set-key[(f8)] 'gud-next)))
+			    (global-set-key[(f8)] 'gud-next)
+			    (setq gdb-many-windows 1)))
