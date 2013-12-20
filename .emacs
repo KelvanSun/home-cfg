@@ -68,4 +68,3 @@
 			    (global-set-key[(f7)] 'gud-step)
 			    (global-set-key[(f8)] 'gud-next)
 			    (setq gdb-many-windows 1)))
-'(compile-command "make")
