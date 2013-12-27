@@ -68,3 +68,5 @@
 			    (global-set-key[(f7)] 'gud-step)
 			    (global-set-key[(f8)] 'gud-next)
 			    (setq gdb-many-windows 1)))
+(setq split-height-threshold 0)
+(setq split-width-threshold nil)
