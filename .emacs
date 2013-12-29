@@ -69,4 +69,9 @@
 			    (global-set-key[(f8)] 'gud-next)
 			    (setq gdb-many-windows 1)))
 (setq split-height-threshold 0)
-(setq split-width-threshold nil)
+;;(setq split-width-threshold nil)
+
+;; config auto-complete
+(add-to-list 'load-path "~/.emacs.d")
+(require 'auto-complete-config)
+(ac-config-default)
