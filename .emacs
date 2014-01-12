@@ -75,3 +75,9 @@
 (add-to-list 'load-path "~/.emacs.d")
 (require 'auto-complete-config)
 (ac-config-default)
+(setq ecb-tip-of-the-day nil)
+
+(global-set-key [M-left] 'windmove-left)
+(global-set-key [M-right] 'windmove-right)
+(global-set-key [M-up] 'windmove-up)
+(global-set-key [M-down] 'windmove-down)
