@@ -20,7 +20,7 @@
 (require 'color-theme)			
 (color-theme-initialize)
 (if(window-system)
-	(color-theme-bharadwaj-slate)
+	(color-theme-gnome2)
 	(color-theme-arjen)
 )
 ;;(load-theme 'wheatgrass t)
