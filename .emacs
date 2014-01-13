@@ -3,6 +3,7 @@
   ;; If you edit it by hand, you could mess it up, so be careful.
   ;; Your init file should contain only one such instance.
   ;; If there is more than one, they won't work right.
+ '(ecb-options-version "2.40")
  '(nil nil t)
  '(show-paren-mode t)
  '(tool-bar-mode nil))
@@ -26,8 +27,6 @@
 ;;(load-theme 'wheatgrass t)
 ;; 去掉启动欢迎界面
 (setq inhibit-startup-message t)
-;; 不显示工具条
-(tool-bar-mode 0)
 ;; 不显示滚动条
 (scroll-bar-mode 0)
 ;; 括号匹配时显示另外一边的括号，而不是烦人的跳到另一个括号
